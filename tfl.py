@@ -11,7 +11,7 @@ mcp = FastMCP("tfl")
 # Constants
 TFL_API_BASE = "https://api.tfl.gov.uk"
 USER_AGENT = "tfl-agent-app/1.0"
-APP_KEY = os.environ['TFL_API_KEY']
+APP_KEY = os.environ["TFL_API_KEY"]
 
 async def make_tfl_request(url: str) -> dict[str, Any] | None:
     """Make a request to the TFL API."""
@@ -31,7 +31,7 @@ async def make_tfl_request(url: str) -> dict[str, Any] | None:
         
 def format_yellow_message(message: dict) -> str:
     return f"""
-Headline: {message.get('headline', 'Unknown')}
+Headline: {message.get("headline", "Unknown")}
 """
 
 @mcp.tool()
@@ -49,4 +49,4 @@ async def get_yellow_banner_messages() -> str:
 
 if __name__ == "__main__":
     # Initialize and run the server
-    mcp.run(transport='stdio')
+    mcp.run(transport="stdio")
