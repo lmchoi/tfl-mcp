@@ -12,3 +12,4 @@ dependencies = [
 
 [project.scripts]
 tfl = "tfl:main"
+journey = "journey:main"
