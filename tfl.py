@@ -1,7 +1,6 @@
 from typing import Any
 import httpx
 from mcp.server.fastmcp import FastMCP
-import sys
 import os
 from dotenv import load_dotenv
 load_dotenv()
