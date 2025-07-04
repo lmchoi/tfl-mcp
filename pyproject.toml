@@ -11,5 +11,5 @@ dependencies = [
 ]
 
 [project.scripts]
-tfl = "tfl:main"
+yellow-banner = "yellow-banner:main"
 journey = "journey:main"

@@ -5,7 +5,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-mcp = FastMCP("tfl")
+mcp = FastMCP("yellow-banner")
 
 # Constants
 TFL_API_BASE = "https://api.tfl.gov.uk"
